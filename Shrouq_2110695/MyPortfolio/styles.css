@@ -1,0 +1,307 @@
+
+/* For All */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFF9F4;
+    padding: 0 7rem;
+}
+#MyAdvantage, #LatestProjects{
+    border-top: 1px solid black;
+    padding: 50px 0;
+}
+#EduExp, #Gallery{
+    border-top: 1px solid gray;
+    padding: 50px 0;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    text-transform: uppercase;
+}
+header > nav > a{
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+    font-weight: 700;
+    transition: 200ms ease-in;
+}
+header > nav > a:visited{
+    text-decoration: none;
+    color: black;
+}
+header > nav > a:hover{
+    color: #99a58c;
+}
+
+/* Main Section */
+main{
+    padding-bottom: 50px;
+}
+#MainTitle{
+    margin-bottom: 30px;
+}
+#MainTitle h1{
+    text-align: center;
+    font-weight: 600;
+}
+main img {
+    margin: auto;
+    width: 550px;
+    min-width: 300px;
+}
+#MainContainer{
+    display: flex;
+    width: fit-content;
+}
+#RightCol, #LeftCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#RightCol div, #LeftCol div{
+    margin-bottom: 10px;
+}
+#RightCol h5, #LeftCol h5{
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 0.75em;
+}
+#RightCol p{
+    font-size: 1em;
+    font-weight: 400;
+}
+#LeftCol{
+    text-align: end;
+}
+#LeftCol p {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* My Advantage Section */
+#AdvantageList {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    max-height: 500px;
+    overflow: auto;
+}
+#AdvantageList > li {
+    width: fit-content;
+    margin: 20px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.AdvContainer {
+    padding: 40px 30px;
+    height: 85%;
+    background-color: #e3e3e3ad;
+    border-radius: 5rem;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.AdvContainer img {
+    width: 60px;
+}
+
+/* Education & Experience Section */
+#EduExp > div{
+    display: flex;
+    justify-content: space-between;
+}
+.EduExpContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.EduExpContainer p{
+    color: #687a65;
+}
+.EduExpContainer ul{
+    padding-left: 0;
+    list-style: none;
+    height: 580px;
+    overflow: auto;
+}
+.EduExpContainer li{
+    margin: 30px 0;
+}
+.EduExpContainer h4{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.EduExpContainer h4 a, .EduExpContainer h4 a:visited{
+    color: black;
+}
+.EduExpContainer span{
+    font-weight: 300;
+    font-size: 0.9em;
+    color: #888c87;
+}
+
+/* My Latest Projects Section */
+#LatestProjectsList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+#LatestProjectsList > li {
+    width: fit-content;
+    margin-bottom: 20px;
+    text-align: end;
+}
+#LatestProjectsList > li > img{
+    width: 300px;
+}
+#LatestProjectsList > li > p{
+    text-align: start;
+    font-size: small;
+}
+#LatestProjectsList h3{
+    text-align: start;
+}
+#LatestProjectsList > li > a{
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    width: fit-content;
+    transition: 300ms ease-in;
+}
+#LatestProjectsList > li > a:hover{
+    color: #99a58c;
+    font-weight: 800;
+}
+
+
+/* Quotes Section */
+#Quotes{
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 50px 20%;
+}
+#Quotes p{
+    line-height: 1.9em;
+    font-size: 1.2em;
+}
+#Quotes h6{
+    margin-top: 15px;
+    color: #a0ae9d;
+    font-weight: 800;
+    font-size: 0.9em;
+}
+
+/* Tailwind Section */
+#Tailwind{
+    border-top: 1px solid black;
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid gray;
+    padding: 25px 0;
+    text-transform: uppercase;
+}
+footer span {
+    font-size: 0.8em;
+}
+.image-profile{
+    border-radius: 150px;
+    width: 20%;
+}
+.SocialMedia{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+.SocialMedia img {
+    width: 26px;
+    margin: 0 10px;
+}
+
+/* 576px, 768px, 992px */
+@media (max-width: 992px) {
+    body{
+        padding: 0 5rem;
+    }
+    #EduExp > div{
+        row-gap: 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+    #LatestProjectsList {
+        justify-content: space-evenly;
+    }
+    #Quotes{
+        padding: 50px 10%;
+    }
+}
+@media (max-width: 768px) {
+    body{
+        padding: 0 2.5rem;
+    }
+    #MainContainer{
+        grid-template-columns: 0.3fr 1fr 0.3fr;
+        column-gap: 10px;
+    }
+    #RightCol p{
+        font-size: 0.8em;
+    }
+    #LatestProjectsList > li > img{
+        width: 200px;
+    }
+    #Quotes{
+        padding: 50px 5%;
+    }
+
+    /* Education & Experience Section */
+#EduExp > div{
+    flex-flow: column;
+}
+    
+}
+@media (max-width: 567px) {
+    body{
+        padding: 0 1rem;
+    }
+
+    #RightCol, #LeftCol{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #RightCol div, #LeftCol div{
+        margin-right: 10px;
+    }
+    #RightCol h5, #LeftCol h5{
+        font-size: 0.55em;
+    }
+    #LeftCol p {
+        font-size: 1em;
+    }
+    #RightCol p{
+        font-size: 0.8em;
+    }
+}
